@@ -242,13 +242,14 @@ print("STEP 4 — XGBoost")
 print("="*60)
 
 try:
+    import json
     _probe = xgb.XGBRegressor(device="cuda", n_estimators=1)
     _probe.fit(X_train.iloc[:10], y_train.iloc[:10])
-    DEVICE = "cuda"
-    print("  GPU detected.")
+    _actual = json.loads(_probe.get_booster().save_config())["learner"]["generic_param"]["device"]
+    DEVICE = _actual if _actual == "cuda" else "cpu"
 except Exception:
     DEVICE = "cpu"
-    print("  CPU only.")
+print(f"  Device: {DEVICE.upper()}")
 
 xgb_model = xgb.XGBRegressor(
     n_estimators=500, max_depth=6, learning_rate=0.05,
