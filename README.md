@@ -1,4 +1,7 @@
-TakeMeHome Web query : https://hsienhsinlee.github.io/dogs/
+<h1 align="center">Take Me Home</h1>
+<p align="center">
+  <a href="https://hsienhsinlee.github.io/dogs/">https://hsienhsinlee.github.io/dogs/</a>
+</p>
 
 Animal shelters across the United States take in millions of animals each year while operating under severe resource and budget constraints. Allocation decisions—which animals receive behavioral rehabilitation, premium placement, medical intervention, or targeted marketing—are typically made by staff based on experience and intuition rather than systematic data analysis. These decisions occur at scale and under time pressure, and they directly shape adoption outcomes. For animals at risk of long shelter stays, early proactive intervention can be life-saving; without it, prolonged shelter stress degrades behavior and further reduces adoptability.
 
